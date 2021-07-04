@@ -18,23 +18,35 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: Vie-en-Yoga
+email: centre.vie.en.yoga@free.fr
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Vie-en-Yoga.com est le site officiel de Centre Vie en Yoga, fondé par Ora
+  Josey-Hay, afin :
+  - de faire connaître le yoga pour l'intégrer dans la vie d'aujourd'hui, comme
+    soutien moral, physique et psychique. permettant de mieux faire face aux
+    difficultés de la vie courante, harmonisant et favorisant l'union du corps
+    et de l'esprit.
+    Etant conscient que le yoga propose des outils de développement personnel et
+    d'ouverture spirituelle, qui peuvent s'insérer dans notre contexte de vie
+    occidentale, notre souhait est d'allier la sagesse millénaire du yoga à la
+    vie moderne.
+  - d'organiser des rencontres avec des représentants d'autres disciplines
+    partageant un même esprit d'ouverture et d'échange dans le but de partager
+    d'autres expériences et de réfléchir ensemble sur le sens de la vie.
+  - de proposer des cours de yoga à Grenoble, dans la vallée de l'Isère, le
+    Grésivaudan et l'agglomération grenobloise.
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+lang: fr
 
 # Build settings
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-date_format: "%b %-d, %Y"
+date_format: "%d/%m/%Y"
 
 # Exclude from processing.
 # The following items will not be processed, by default.

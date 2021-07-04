@@ -1,8 +1,11 @@
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-  {%- assign default_paths = site.pages | map: "path" -%}
+  {%- assign default_paths = site.pages | sort: "order" | map: "path" -%}
   {%- assign page_paths = site.header_pages | default: default_paths -%}
   <div class="container-fluid">
-    <a class="navbar-brand" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    <a class="navbar-brand" rel="author" href="{{ "/" | relative_url }}">
+      <img src="{{ "/assets/img/logo_white.png" | relative_url }}" alt="logo" height="50px" />
+      {{ site.title | escape }}
+    </a>
 
     {%- if page_paths -%}
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
