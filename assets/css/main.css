@@ -1,16 +1,6 @@
-.bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-}
+.bd-placeholder-img { font-size: 1.125rem; text-anchor: middle; -webkit-user-select: none; -moz-user-select: none; user-select: none; }
 
-@media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
-  }
-}
+@media (min-width: 768px) { .bd-placeholder-img-lg { font-size: 3.5rem; } }
 
 .fond_base_logo_entree_1920_1080 {
     display:grid;
@@ -36,7 +26,6 @@
     background-size: cover;
     overflow: hidden;
 }
-
 .fond_clair_logo_1920_1080 {
     position: relative;
     background: #fff url("/assets/img/fond_clair_logo_1920_1080.jpg") center center;/*fond_clair_logo_1920_1080.jpg =>you image*/   
@@ -47,9 +36,8 @@
     overflow: hidden;
 }
 
-.bg-dark {
-    background-color: #514ea1!important;
-}
+
+.bg-dark { background-color: #514ea1 !important; }
 .bg-ora { background-color: #7465AA !important; }
 .bg-eva { background-color: #A69CCE !important; }
 .bg-laurence { background-color: #C4BEDA !important; }
@@ -63,3 +51,9 @@
 
 .txt-cvy { color: #514ea1 !important; }
 .txt-brun { color: #800000 !important; }
+
+
+
+body { min-height: 75rem; }
+
+/*# sourceMappingURL=main.css.map */
