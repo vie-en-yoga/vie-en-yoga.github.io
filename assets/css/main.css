@@ -19,11 +19,12 @@
 .fond_base_trois_textes_1920_1080 {
     position: relative;
     background-image: url("/assets/img/fond_base_trois_textes_1920_1080.jpg");   
-    background-position: center center;
+    background-position: top;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
     background-color: #514ea1;
+    width: 50rem;
+    height: 28.125rem;
+    background-size: cover;
     overflow: hidden;
 }
 .fond_clair_logo_1920_1080 {
