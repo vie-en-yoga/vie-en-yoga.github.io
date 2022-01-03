@@ -6,8 +6,7 @@
     display:grid;
     position: top;
     background: transparent 
-    url("/assets/img/fond_base_logo_entree_1920_1080.jpg") center center;/*fond_base_logo_entree_1920_1080.jpg =>you image*/   
-    width: 50rem;
+    url("/assets/img/fond_base_logo_entree_1920_1080.jpg") center center;
     height: 28.125rem;
     background-size: cover;
     overflow: hidden;
@@ -19,16 +18,16 @@
 
 .fond_base_trois_textes_1920_1080 {
     position: relative;
-    background: #fff url("/assets/img/fond_base_trois_textes_1920_1080.jpg") center center;/*fond_base_trois_textes_1920_1080.jpg =>you image*/   
+    background: #fff url("/assets/img/fond_base_trois_textes_1920_1080.jpg") center center;   
     background-position: top;
     width: 50rem;
     height: 28.125rem;
     background-size: cover;
-    overflow: hidden;
+    overflow: auto;
 }
 .fond_clair_logo_1920_1080 {
     position: relative;
-    background: #fff url("/assets/img/fond_clair_logo_1920_1080.jpg") center center;/*fond_clair_logo_1920_1080.jpg =>you image*/   
+    background: #fff url("/assets/img/fond_clair_logo_1920_1080.jpg") center center;
     background-position: top;
     width: 50rem;
     height: 28.125rem;
