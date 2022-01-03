@@ -17,7 +17,7 @@
 }
 
 .fond_base_trois_textes_1920_1080 {
-    /* position: relative;  */
+    position: relative;
     background-image: url("/assets/img/fond_base_trois_textes_1920_1080.jpg");   
     background-position: center center;
     background-repeat: no-repeat;
