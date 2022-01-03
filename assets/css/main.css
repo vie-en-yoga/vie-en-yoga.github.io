@@ -23,7 +23,7 @@
     width: 50rem;
     height: 28.125rem;
     background-size: cover;
-    overflow: auto;
+    overflow: hidden;
 }
 .fond_clair_logo_1920_1080 {
     position: relative;
