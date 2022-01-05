@@ -37,6 +37,15 @@
     overflow: hidden;
 }
 
+.fond_clair_pages_suivantes_1920_1080 {
+    position: relative;
+    background: #fff url("/assets/img/fond_clair_pages_suivantes_1920_1080.jpg") center center;
+    background-position: top;
+    width: 50rem;
+    height: 28.125rem;
+    background-size: cover;
+    overflow: hidden;
+}
 
 .bg-dark { background-color: #514ea1 !important; }
 .bg-ora { background-color: #7465AA !important; }
