@@ -27,7 +27,7 @@
 <style type="text/css">
     #avertissement { display: none; }
     @media only screen and (orientation:portrait){
-        #fixed-top { display:none; }
+        #wrapper { display:none; }
         #avertissement { display:block; }
     }
     @media only screen and (orientation:landscape){
@@ -36,7 +36,7 @@
 </style>
 </head> 
 <body>
-
+<div id="wrapper">
  <div class="fixed-top">
   <div class="fond_base_logo_entree_1920_1080">
     	  <area shape="rect" coords="0,0,1920,1080"  href="menu.html" alt="Accès au menu général" title="LE SITE SE MODERNISE..."> 
@@ -45,6 +45,7 @@
   <data class="u-url" href="/"></data>
 </footer>
  </div>   <!--  fixed-top  -->
+</div>    <!--   wrapper   -->
 <div id="avertissement">
   <p>Attention ce site n&apos;est visible qu&apos;en mode paysage.</p>
 </div>
