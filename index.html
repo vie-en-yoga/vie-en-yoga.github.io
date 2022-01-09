@@ -24,25 +24,16 @@
   <link rel="icon" href="/assets/favicon/favicon-32x32.png" sizes="32x32" type="image/png" />
   <link rel="icon" href="/assets/favicon/favicon-16x16.png" sizes="16x16" type="image/png" />
   <link rel="icon" href="">
-  <style>
-   #avertissement {
-	display: none;
-}
- @media only screen and (orientation:portrait) {
-#wrapper {
-	display: none;
-}
-#avertissement {
-	display: block;
-}
-}
- @media only screen and (orientation:landscape) {
-#avertissement {
-	display: none;
-}
-}
-</style>
-</head> 
+<style type="text/css">
+    #avertissement { display: none; }
+    @media only screen and (orientation:portrait){
+        #wrapper { display:none; }
+        #avertissement { display:block; }
+    }
+    @media only screen and (orientation:landscape){
+        #avertissement { display:none; }
+    }
+</style></head> 
 <body>
 
 <div class="wrapper">
