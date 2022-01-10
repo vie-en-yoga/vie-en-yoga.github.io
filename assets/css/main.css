@@ -2,6 +2,15 @@
 
 @media (min-width: 768px) { .bd-placeholder-img-lg { font-size: 3.5rem; } }
 
+    #avertissement { display: none; }
+    @media only screen and (orientation:portrait){
+        #wrapper { display:none; }
+        #avertissement { display:block; }
+    }
+    @media only screen and (orientation:landscape){
+        #avertissement { display:none; }
+    }
+
 .fond_base_logo_entree_1920_1080 {
     display:grid;
     position: top;
