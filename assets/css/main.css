@@ -1,20 +1,23 @@
 
-    #avertissement { display: none; }
-    @media only screen and (orientation:portrait){
-        #wrapper { display:none; }
-        #avertissement { display:block; }
-    }
-    @media only screen and (orientation:landscape){
-        #avertissement { display:none; }
-    }
+#avertissement { display: none; }                  /*  a priori pas d'affichage du message/paysage  */
+@media only screen and (orientation:portrait){     /*  si mode portrait :  */
+    #wrapper { display:none; }                     /*    pas d'affichage du fond de plan */
+    #avertissement { display:block; }              /*    affichage du message/paysage  */
+}
+@media only screen and (orientation:landscape){
+    #avertissement { display:none; }
+}
+
+#wrapper{
+    background-color: #b4b2e;   
+}    
 
 .fond_base_logo_entree_1920_1080 {
     display:grid;
-    position: top;
-    background: transparent 
-    url("/assets/img/fond_base_logo_entree_1920_1080.jpg") center center;
-    height: 28.125rem;
-    background-size: cover;
+    height: 27.75rem;
+    background-image: url("/assets/img/fond_base_logo_entree_1920_1080.jpg");   /* Emplacement de l'image */ 
+    background-size: contain; 
+    background-repeat: round;
     overflow: hidden;
 }
 
@@ -23,33 +26,26 @@
 }
 
 .fond_base_trois_textes_1920_1080 {
-    position: relative;
-    background-image: url("/assets/img/fond_base_trois_textes_1920_1080.jpg");   
-    background-position: top;
-    background-repeat: no-repeat;
-    background-color: #514ea1;
-    width: 50rem;
-    height: 28.125rem;
-    background-size: cover;
+    height: 27.75rem;
+    background-image: url("/assets/img/fond_base_trois_textes_1920_1080.jpg");   /* Emplacement de l'image */ 
+    background-size: contain; 
+    background-repeat: round;
     overflow: hidden;
 }
+
 .fond_clair_logo_1920_1080 {
-    position: relative;
-    background: #fff url("/assets/img/fond_clair_logo_1920_1080.jpg") center center;
-    background-position: top;
-    width: 50rem;
-    height: 28.125rem;
-    background-size: cover;
+    height: 27.75rem;
+    background-image: url("/assets/img/fond_clair_logo_1920_1080.jpg");   /* Emplacement de l'image */ 
+    background-size: contain; 
+    background-repeat: round;
     overflow: hidden;
 }
 
 .fond_clair_pages_suivantes_1920_1080 {
-    position: relative;
-    background: #fff url("/assets/img/fond_clair_pages_suivantes_1920_1080.jpg") center center;
-    background-position: top;
-    width: 50rem;
-    height: 28.125rem;
-    background-size: cover;
+    height: 27.75rem;
+    background-image: url("/assets/img/fond_clair_pages_suivantes_1920_1080.jpg");   /* Emplacement de l'image */ 
+    background-size: contain; 
+    background-repeat: round;
     overflow: hidden;
 }
 
