@@ -32,11 +32,11 @@
 }
 
 .fond_base_trois_textes_1920_1080 {
-    height: 27.75rem;
-    background-image: url("/assets/img/fond_base_trois_textes_1920_1080.jpg");   /* Emplacement de l'image */ 
-    background-size: contain; 
-    background-repeat: round;
-    overflow: hidden;
+  background: url("/assets/img/fond_base_trois_textes_1920_1080.jpg") no-repeat top left fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .fond_clair_logo_1920_1080 {
