@@ -40,19 +40,19 @@
 }
 
 .fond_clair_logo_1920_1080 {
-    height: 27.75rem;
-    background-image: url("/assets/img/fond_clair_logo_2218_1080.jpg");   /* Emplacement de l'image */ 
-    background-size: contain; 
-    background-repeat: round;
-    overflow: hidden;
+  background: url("/assets/img/fond_clair_logo_2218_1080.jpg") no-repeat top left fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .fond_clair_pages_suivantes_1920_1080 {
-    height: 27.75rem;
-    background-image: url("/assets/img/fond_clair_pages_suivantes_1920_1080.jpg");   /* Emplacement de l'image */ 
-    background-size: contain; 
-    background-repeat: round;
-    overflow: hidden;
+  background: url("/assets/img/fond_clair_pages_suivantes_1920_1080.jpg") no-repeat top left fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .bg-dark { background-color: #514ea1 !important; }
