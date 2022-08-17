@@ -1,4 +1,7 @@
 <head>
+  {%- if site.google_analytics and jekyll.environment == 'production' -%}
+    {%- include google-analytics.html -%}
+  {%- endif -%}
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -6,9 +9,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.0.2/cosmo/bootstrap.min.css" integrity="sha512-61f8/6Z0HBl96abjaKeob5XiSSCD4W8ZoElkIF8uvaekvpNCLa9u6TDLE5/Y7FWQCIHXWEfD3TYE9TzUbaBaNw==" crossorigin="anonymous" referrerpolicy="no-referrer" onerror="this.onerror=null; this.href='{{ "/assets/css/bootstrap.min.css" | relative_url }}';" />
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
   {%- feed_meta -%}
-  {%- if jekyll.environment == 'production' and site.google_analytics -%}
-    {%- include google-analytics.html -%}
-  {%- endif -%}
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" href="{{ "/assets/favicon/apple-touch-icon.png" | relative_url }}" sizes="180x180" />
