@@ -132,6 +132,26 @@ main > .container {
   color: rgba(255,255,255,.55);
 }
 
+.text-footer-right > a:link {
+  text-decoration: none;
+  color: rgba(255,255,255,.55);
+}
+
+.text-footer-right > a:visited {
+  text-decoration: none;
+  color: rgba(255,255,255,.55);
+}
+
+.text-footer-right > a:hover {
+  text-decoration: none;
+  color: rgba(255,255,255,.75);
+}
+
+.text-footer-right > a:active {
+  text-decoration: none;
+  color: rgba(255,255,255,.75);
+}
+
 .nav-item {
   font-family: 'Din17 Regular';
   font-weight: bold;
