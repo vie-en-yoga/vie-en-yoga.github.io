@@ -1,0 +1,15 @@
+{
+  "name": "Centre Vie en Yoga",
+  "short_name": "CVY",
+  "icons": [
+    {
+      "src": "android-chrome-180x180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/?utm_source=a2hs",
+  "theme_color": "#514ea1",
+  "background_color": "#514ea1",
+  "display": "standalone"
+}
