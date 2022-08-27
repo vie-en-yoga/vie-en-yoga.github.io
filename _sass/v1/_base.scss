@@ -176,3 +176,9 @@ $cvy-purple: #514ea1;
 .txt-cvy { color: $cvy-purple !important; }
 .txt-brun { color: #800000 !important; }
 .txt-or { color: #FFC300 !important; }
+
+.grid-striped {
+  .row:nth-of-type(odd) {
+    background-color: rgba(0,0,0,.05);
+  }
+}
