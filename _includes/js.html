@@ -7,13 +7,31 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/datatables.net/1.12.1/jquery.dataTables.min.js" integrity="sha512-MOsicOaJyNWPgwMOE1q4sTPZK6KuUQTMBhkmzb0tFVSRxgx3VnGTwIyRme/IhBJQdWJkfTcIKozchO11ILrmSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script type="text/javascript">(typeof DataTable === 'undefined') && document.write('<script src="{{ "/assets/js/jquery.dataTables.min.js" | relative_url }}"><\/script>')</script>
 
-<!-- Used by bibliotheque.html -->
 <script type="text/javascript">
 $(document).ready(function () {
-    $('#books').DataTable({
-        language: {
-            url: "//cdn.datatables.net/plug-ins/1.12.1/i18n/fr-FR.json"
-        },
-    });
+  // Used by bibliotheque.html, to make the table of books sortable, searchable, etc.
+  $('#books').DataTable({
+      language: {
+          url: "//cdn.datatables.net/plug-ins/1.12.1/i18n/fr-FR.json"
+      },
+  });
+
+  // Used by enseignantes.html, to activate the right teacher's tab when someone
+  // uses an URL with an anchor to a specific teacher, e.g.:
+  // - "/enseignantes/#ora" should show Ora's tab,
+  // - "/enseignantes/#eva" should show Eva's tab.
+  $(function(){
+    let tabId = window.location.hash;
+    if (tabId) {
+      // Activate the right pill:
+      $('#teachers-nav > li.nav-item > button.nav-link').removeClass('active').attr('aria-selected', 'false');
+      $(`${tabId}-button`).addClass('active').attr('aria-selected', 'true');
+      // Show the associated tab:
+      $('div#teachers-content.tab-content > div.tab-pane').removeClass('show active');
+      $(`${tabId}-tab-pane`).addClass('show active');
+      // Scroll to the top of the window:
+      $('body').scrollTop();
+    }
+  });
 });
 </script>

@@ -1,3 +1,5 @@
+@import "variables";
+
 $cvy-purple: #514ea1;
 
 #avertissement { display: none; }                  /*  a priori pas d'affichage du message/paysage  */
@@ -143,6 +145,34 @@ $cvy-purple: #514ea1;
     background-color: $cvy-purple;
     color: rgba(255,255,255,.75);
   }
+}
+
+.nav-pills .nav-item .nav-link {
+  font-family: 'Din17 Regular';
+  font-weight: bold;
+  color: $cvy-purple;
+  border-radius: 0.375rem;
+  &.active {
+    color: rgba(255,255,255,1);
+    background-color: $cvy-purple;
+  }
+}
+
+.teacher-profile-picture {
+  border-radius: 50%;
+  border: 2px solid $cvy-purple;
+  margin: 0 0 15px 15px;
+}
+@media (min-width: $lg) {
+  .teacher-profile-picture {
+    // Shift the profile pictures to the left on large screens for better readability.
+    margin: 0 150px 15px 15px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Din17 Regular';
+  font-weight: bold;
 }
 
 .carousel-item > img {
