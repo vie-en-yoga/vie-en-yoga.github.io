@@ -3,12 +3,27 @@
 // padding-bottom changes depending on the size of the screen to ensure that
 // the footer does NOT hide the main content, regardless of how the footer is
 // resized:
-
 main > .container {
   padding: 60px 15px 56px;
 }
 @media (max-width: $xl) {
   main > .container {
     padding: 60px 15px 80px;
+  }
+}
+
+// Table of content:
+nav[data-toggle="toc"] {
+  top: 60px;
+}
+@media (max-width: $sm) {
+  nav[data-toggle="toc"] {
+    margin-bottom: 20px;
+    // Disable stickyness so that the navigation does not follow scrolling:
+    position: static;
+  }
+  // Don't expand nested items (which pushes down the rest of the page when navigating):
+  nav[data-toggle="toc"] .nav .active .nav {
+    display: none;
   }
 }
