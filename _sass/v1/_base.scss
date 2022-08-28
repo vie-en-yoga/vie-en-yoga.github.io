@@ -1,7 +1,5 @@
 @import "variables";
 
-$cvy-purple: #514ea1;
-
 #avertissement { display: none; }                  /*  a priori pas d'affichage du message/paysage  */
 @media only screen and (orientation:portrait){     /*  si mode portrait :  */
     #wrapper { display:none; }                     /*    pas d'affichage du fond de plan */
