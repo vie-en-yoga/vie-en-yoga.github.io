@@ -1,20 +1,23 @@
 @import "variables";
 
+$header-height: 56px;
+$top: $header-height + 4px;
+
 // padding-bottom changes depending on the size of the screen to ensure that
 // the footer does NOT hide the main content, regardless of how the footer is
 // resized:
 main > .container {
-  padding: 60px 15px 56px;
+  padding: $top 15px 56px;
 }
 @media (max-width: $xl) {
   main > .container {
-    padding: 60px 15px 80px;
+    padding: $top 15px 80px;
   }
 }
 
 // Table of content:
 nav[data-toggle="toc"] {
-  top: 60px;
+  top: $top;
 }
 @media (max-width: $sm) {
   nav[data-toggle="toc"] {
