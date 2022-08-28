@@ -30,3 +30,14 @@ nav[data-toggle="toc"] {
     display: none;
   }
 }
+
+thead.sticky-top {
+  top: $header-height;
+  // Non-transparent head, otherwise thead and tbody overlap when scrolling with
+  // a sticky thread:
+  background-color: $cvy-purple;
+  color: $gray-200;
+  // Borders move with the scroll of the table, so we have a 1px large inset
+  // box-shawdow to visually delimit the thead from the top navigation menu:
+  box-shadow: inset 0 1px 0 $gray-300;
+}
