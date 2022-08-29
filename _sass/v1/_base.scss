@@ -177,6 +177,10 @@ td.table-section {
   background-color: $cvy-purple-light;
 }
 
+.table > thead, tbody > tr > td {
+  vertical-align: middle !important;
+}
+
 .carousel-item > img {
   border-radius: 50%;
   border: 2px solid $cvy-purple;
