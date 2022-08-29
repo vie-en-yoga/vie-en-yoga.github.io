@@ -1,0 +1,53 @@
+---
+layout: default
+title: Enseignantes
+permalink: /enseignantes/
+order: 8
+type: page
+---
+
+<div class="container">
+  <div class="row mb-2">
+    <div class="col">
+      <h4>Présentations des Enseignantes</h4>
+    </div>
+  </div>
+
+  <div class="row mb-2">
+    <div class="col">
+      <ul class="nav nav-pills mb-3" id="teachers-nav" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="ora-button" data-bs-toggle="tab" data-bs-target="#ora-tab-pane" type="button" role="tab" aria-controls="ora-tab-pane" aria-selected="true">Ora</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="eva-button" data-bs-toggle="tab" data-bs-target="#eva-tab-pane" type="button" role="tab" aria-controls="eva-tab-pane" aria-selected="false">Eva</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="laurence-button" data-bs-toggle="tab" data-bs-target="#laurence-tab-pane" type="button" role="tab" aria-controls="laurence-tab-pane" aria-selected="false">Laurence</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="yannick-button" data-bs-toggle="tab" data-bs-target="#yannick-tab-pane" type="button" role="tab" aria-controls="yannick-tab-pane" aria-selected="false">Yannick</button>
+        </li>
+      </ul>
+    </div><!-- end: col -->
+  </div><!-- end: row -->
+
+  <div class="row mb-2">
+    <div class="col">
+      <div class="tab-content" id="teachers-content">
+        <div class="tab-pane fade show active" id="ora-tab-pane" role="tabpanel" aria-labelledby="ora-button" tabindex="0">
+          {%- include enseignantes/ora.html -%}
+        </div>
+        <div class="tab-pane fade" id="eva-tab-pane" role="tabpanel" aria-labelledby="eva-button" tabindex="0">
+          {%- include enseignantes/eva.html -%}
+        </div>
+        <div class="tab-pane fade" id="laurence-tab-pane" role="tabpanel" aria-labelledby="laurence-button" tabindex="0">
+          {%- include enseignantes/laurence.html -%}
+        </div>
+        <div class="tab-pane fade" id="yannick-tab-pane" role="tabpanel" aria-labelledby="yannick-button" tabindex="0">
+          {%- include enseignantes/yannick.html -%}
+        </div>
+      </div>
+    </div><!-- end: col -->
+  </div><!-- end: row -->
+</div><!-- end: container -->

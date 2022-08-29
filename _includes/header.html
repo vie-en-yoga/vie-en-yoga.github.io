@@ -1,32 +1,53 @@
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-  {%- assign default_paths = site.pages | sort: "order" | map: "path" -%}
-  {%- assign page_paths = site.header_pages | default: default_paths -%}
-  <div class="container-fluid">
-    <a class="navbar-brand" rel="author" href="{{ "/" | relative_url }}">
-      <img src="{{ "/assets/img/logo_white.png" | relative_url }}" alt="logo" height="50px" />
-      {{ site.title | escape }}
-    </a>
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">
+        <img src="/assets/img/logo_white.png" alt="logo" height="26px" />
+      </a>
 
-    {%- if page_paths -%}
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav me-auto mb-2 mb-md-0">
-        {%- for path in page_paths -%}
-          {%- assign my_page = site.pages | where: "path", path | first -%}
-          {%- if my_page.title -%}
-            <li class="nav-item">
-            {%- if my_page.url == page.url -%}
-              <a class="nav-link active" aria-current="page" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item dropdown">
+            {%- if page.url contains "/cours" -%}
+            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cours</a>
             {%- else -%}
-              <a class="nav-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cours</a>
+            {%- endif -%}
+            <ul class="dropdown-menu bg-dark">
+              <!-- Add all sub-menu entries -->
+              {%- assign subpages = site.pages | where: "type", "subpage" | sort: "order" -%}
+              {%- for p in subpages -%}
+                <li>
+                {%- if p.title == page.title -%}
+                  <a class="dropdown-item active" aria-current="page" href="{{ p.url | relative_url }}">{{ p.title | escape }}</a>
+                {%- else -%}
+                  <a class="dropdown-item" href="{{ p.url | relative_url }}">{{ p.title | escape }}</a>
+                {%- endif -%}
+                </li>
+              {%- endfor -%}
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="/assets/pdf/fiche_inscription_cours_vie_en_yoga_2022_2023.pdf" target="_blank">Fiche d'inscription</a></li>
+              <li><a class="dropdown-item" href="/assets/pdf/reglement_interieur_centre_vie_en_yoga.pdf" target="_blank">Règlement intérieur du Centre</a></li>
+            </ul>
+          </li>
+
+          <!-- Add all other menu entries -->
+          {%- assign pages = site.pages | where: "type", "page" | sort: "order" -%}
+          {%- for p in pages -%}
+            <li class="nav-item">
+            {%- if p.title == page.title -%}
+              <a class="nav-link active" aria-current="page" href="{{ p.url | relative_url }}">{{ p.title | escape }}</a>
+            {%- else -%}
+              <a class="nav-link" href="{{ p.url | relative_url }}">{{ p.title | escape }}</a>
             {%- endif -%}
             </li>
-          {%- endif -%}
-        {%- endfor -%}
-      </ul>
+          {%- endfor -%}
+        </ul>
+      </div>
     </div>
-    {%- endif -%}
-  </div>
-</nav>
+  </nav>
+</header>
