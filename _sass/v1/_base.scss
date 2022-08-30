@@ -187,6 +187,19 @@ td.table-section {
   border: 2px solid $cvy-purple;
 }
 
+a.ora {
+  // No style modification for not.
+}
+a.eva {
+  color: green !important;
+}
+a.yannick {
+  color: #db199e !important;
+}
+a.laurence {
+  color: #240099 !important;
+}
+
 .bg-dark { background-color: $cvy-purple !important; }
 .bg-ora { background-color: #7465AA !important; }
 .bg-eva { background-color: #A69CCE !important; }
