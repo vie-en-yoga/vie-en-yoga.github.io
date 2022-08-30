@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Din17 Regular';
+  src: url("/assets/fonts/Din17 Regular.woff2") format("woff"),
+       url("/assets/fonts/Din17 Regular.woff2") format("woff2"),
+       url("/assets/fonts/Din17 Regular.ttf") format("truetype"),
+       url("/assets/fonts/Din17 Regular.otf") format("opentype"),
+       url("/assets/fonts/Din17 Regular.eot") format("embedded-opentype"),
+       url("/assets/fonts/Din17 Regular.svg") format("svg");
+}
+
+.font-din17 {
+  font-family: 'Din17 Regular';
+}

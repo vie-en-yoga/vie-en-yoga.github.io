@@ -1,2 +1,41 @@
-<script type="application/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script type="application/javascript">(typeof bootstrap === 'undefined') && document.write('<script src="{{ "/assets/js/bootstrap.bundle.min.js" | relative_url }}"><\/script>')</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.bundle.min.js" integrity="sha512-9GacT4119eY3AcosfWtHMsT5JyZudrexyEVzTBWV3viP/YfB9e2pEy3N7WXL3SV6ASXpTU0vzzSxsbfsuUH4sQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript">(typeof bootstrap === 'undefined') && document.write('<script src="{{ "/assets/js/bootstrap.bundle.min.js" | relative_url }}"><\/script>')</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript">(typeof jQuery === 'undefined') && document.write('<script src="{{ "/assets/js/jquery.min.js" | relative_url }}"><\/script>')</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/datatables.net/1.12.1/jquery.dataTables.min.js" integrity="sha512-MOsicOaJyNWPgwMOE1q4sTPZK6KuUQTMBhkmzb0tFVSRxgx3VnGTwIyRme/IhBJQdWJkfTcIKozchO11ILrmSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript">(typeof DataTable === 'undefined') && document.write('<script src="{{ "/assets/js/jquery.dataTables.min.js" | relative_url }}"><\/script>')</script>
+
+<!-- Plugin for tables of content -->
+<script type="text/javascript" src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
+<script type="text/javascript">(typeof window.Toc === 'undefined') && document.write('<script src="{{ "/assets/js/bootstrap-toc.min.js" | relative_url }}"><\/script>')</script>
+
+<script type="text/javascript">
+$(document).ready(function () {
+  // Used by bibliotheque.html, to make the table of books sortable, searchable, etc.
+  $('#books').DataTable({
+      language: {
+          url: "//cdn.datatables.net/plug-ins/1.12.1/i18n/fr-FR.json"
+      },
+  });
+
+  // Used by enseignantes.html, to activate the right teacher's tab when someone
+  // uses an URL with an anchor to a specific teacher, e.g.:
+  // - "/enseignantes/#ora" should show Ora's tab,
+  // - "/enseignantes/#eva" should show Eva's tab.
+  $(function(){
+    let tabId = window.location.hash;
+    if (tabId) {
+      // Activate the right pill:
+      $('#teachers-nav > li.nav-item > button.nav-link').removeClass('active').attr('aria-selected', 'false');
+      $(`${tabId}-button`).addClass('active').attr('aria-selected', 'true');
+      // Show the associated tab:
+      $('div#teachers-content.tab-content > div.tab-pane').removeClass('show active');
+      $(`${tabId}-tab-pane`).addClass('show active');
+      // Scroll to the top of the window:
+      $('body').scrollTop();
+    }
+  });
+});
+</script>

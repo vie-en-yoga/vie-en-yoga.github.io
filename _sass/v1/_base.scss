@@ -1,0 +1,173 @@
+@import "variables";
+
+.background-image-with-clouds {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -3;
+  background: url("/assets/img/fond_clair_pages_suivantes_1920_1080.jpg") no-repeat top left fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.logo-circle {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background: url("/assets/img/logo_circle.png") no-repeat -80px 20px fixed;
+  -webkit-background-size: 400px;
+  -moz-background-size: 400px;
+  -o-background-size: 400px;
+  background-size: 400px;
+}
+
+.text-cvey-bg {
+  font-size: 35px;
+  font-weight: bold;
+  color: $cvy-purple;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.text-cvey-c {
+  position: fixed;
+  top: 260px;
+  left: 40px;
+}
+
+.text-cvey-vey {
+  position: fixed;
+  top: 300px;
+  left: 80px;
+}
+
+.footer {
+  background-color: $cvy-purple;
+}
+
+.text-footer-left {
+  font-family: 'Din17 Regular';
+  font-weight: bold;
+  color: rgba(255,255,255,.75);
+}
+
+.text-footer-right {
+  font-family: 'Din17 Regular';
+  font-weight: bold;
+  text-align: right;
+  color: rgba(255,255,255,.55);
+}
+
+.text-footer-right > a:link {
+  text-decoration: none;
+  color: rgba(255,255,255,.55);
+}
+
+.text-footer-right > a:visited {
+  text-decoration: none;
+  color: rgba(255,255,255,.55);
+}
+
+.text-footer-right > a:hover {
+  text-decoration: none;
+  color: rgba(255,255,255,.75);
+}
+
+.text-footer-right > a:active {
+  text-decoration: none;
+  color: rgba(255,255,255,.75);
+}
+
+.nav-item {
+  font-family: 'Din17 Regular';
+  font-weight: bold;
+}
+
+.dropdown {
+  background-color: $cvy-purple;
+}
+
+.dropdown-item {
+  background-color: $cvy-purple;
+  color: rgba(255,255,255,.55);
+  &:focus, &:hover {
+    background-color: $cvy-purple;
+    color: rgba(255,255,255,.75);
+  }
+}
+
+.dropdown-item.active {
+  background-color: $cvy-purple;
+  color: rgba(255,255,255,1);
+  &:focus, &:hover {
+    background-color: $cvy-purple;
+    color: rgba(255,255,255,.75);
+  }
+}
+
+.nav-pills .nav-item .nav-link {
+  font-family: 'Din17 Regular';
+  font-weight: bold;
+  color: $cvy-purple;
+  border-radius: 0.375rem;
+  &.active {
+    color: rgba(255,255,255,1);
+    background-color: $cvy-purple;
+  }
+}
+
+.teacher-profile-picture {
+  border-radius: 50%;
+  border: 2px solid $cvy-purple;
+  margin: 0 0 15px 15px;
+}
+@media (min-width: $lg) {
+  .teacher-profile-picture {
+    // Shift the profile pictures to the left on large screens for better readability.
+    margin: 0 150px 15px 15px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Din17 Regular';
+  font-weight: bold;
+  color: $cvy-purple;
+}
+
+td.table-section {
+  background-color: $cvy-purple-light;
+}
+
+.table > thead, tbody > tr > td {
+  vertical-align: middle !important;
+}
+
+.carousel-item > img {
+  border-radius: 50%;
+  border: 2px solid $cvy-purple;
+}
+
+a.ora {
+  // No style modification for not.
+}
+a.eva {
+  color: green !important;
+}
+a.yannick {
+  color: #db199e !important;
+}
+a.laurence {
+  color: #240099 !important;
+}
+
+.bg-dark { background-color: $cvy-purple !important; }
+.txt-brun { color: #800000 !important; }
+
+.grid-striped {
+  .row:nth-of-type(odd) {
+    background-color: rgba(0,0,0,.05);
+  }
+}
