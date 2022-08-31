@@ -47,6 +47,7 @@ google_analytics: G-G4470NEK6E
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 date_format: "%d/%m/%Y"
 
