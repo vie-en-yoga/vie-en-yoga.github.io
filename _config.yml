@@ -37,8 +37,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   - de proposer des cours de yoga à Grenoble, dans la vallée de l'Isère, le
     Grésivaudan et l'agglomération grenobloise.
 
+url: "https://www.vie-en-yoga.com" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
 lang: fr
 
 google_analytics: G-G4470NEK6E
