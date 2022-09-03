@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Contact & Accès
-description: Accès au Centre de Vie en Yoga, coordonnées (téléphone, email), et renseignements administratifs.
+description: Centre Vie en Yoga, Grenoble - Accès, coordonnées (téléphone, email), et renseignements administratifs.
 permalink: /contact/
 order: 11
 type: page
@@ -36,13 +36,13 @@ type: page
 
       <h5>Téléphone</h5>
       <p>
-        Fixe : <a href="tel:0476716307">04.76.71.63.07</a><br />
-        Portable : <a href="tel:0618108134">06.18.10.81.34</a><br />
+        Fixe : <a href="tel:{{ site.phone.landline | remove: '.' }}">{{ site.phone.landline }}</a><br />
+        Portable : <a href="tel:{{ site.phone.mobile | remove: '.' }}">{{ site.phone.mobile }}</a><br />
       </p>
 
       <h5>Adresse mail</h5>
       <p>
-        <a href="mailto:centre.vie.en.yoga@free.fr">centre.vie.en.yoga@free.fr</a><br />
+        <a href="mailto:{{ site.email }}">{{ site.email }}</a><br />
       </p>
         
       <h5>Administratif</h5>
