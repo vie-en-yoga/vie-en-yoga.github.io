@@ -37,7 +37,7 @@ type: page
       <h5>Téléphone</h5>
       <p>
         Fixe : <a href="tel:{{ site.phone.landline | remove: '.' }}">{{ site.phone.landline }}</a><br />
-        Portable : <a href="tel:0618108134">06.18.10.81.34</a><br />
+        Portable : <a href="tel:{{ site.phone.mobile | remove: '.' }}">{{ site.phone.mobile }}</a><br />
       </p>
 
       <h5>Adresse mail</h5>
