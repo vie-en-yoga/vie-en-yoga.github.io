@@ -15,6 +15,12 @@ main > .container {
   }
 }
 
+// Ensure that the header does not hide the title of the section we point to via
+// anchor links (e.g. via the table of content for /yoga/ or /cours/contenu/).
+html {
+  scroll-padding-top: $top;
+}
+
 // Table of content:
 nav[data-toggle="toc"] {
   top: $top;
