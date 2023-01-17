@@ -27,25 +27,14 @@ phone:
   landline: 04.76.71.63.07
   mobile: 06.18.10.81.34
 description: >- # this means to ignore newlines until "baseurl:"
-  Centre Vie en Yoga, Grenoble - Vie-en-Yoga.com est le site officiel de Centre Vie en Yoga, fondé par Ora
-  Josey-Hay, afin :
-  - de faire connaître le yoga pour l'intégrer dans la vie d'aujourd'hui, comme
-    soutien moral, physique et psychique. permettant de mieux faire face aux
-    difficultés de la vie courante, harmonisant et favorisant l'union du corps
-    et de l'esprit.
-    Etant conscient que le yoga propose des outils de développement personnel et
-    d'ouverture spirituelle, qui peuvent s'insérer dans notre contexte de vie
-    occidentale, notre souhait est d'allier la sagesse millénaire du yoga à la
-    vie moderne.
-  - d'organiser des rencontres avec des représentants d'autres disciplines
-    partageant un même esprit d'ouverture et d'échange dans le but de partager
-    d'autres expériences et de réfléchir ensemble sur le sens de la vie.
-  - de proposer des cours de yoga à Grenoble, dans la vallée de l'Isère, le
-    Grésivaudan et l'agglomération grenobloise.
+  Cours et stages de Yoga à Grenoble, pour tous de débutant à confirmé.
+  Ora Josef-Hay, 30 ans d'expérience du Hatha Yoga.
+  Le centre propose aussi yoga pour séniors, PMR ou personne en situation de handicap.
 keywords:
   - cours
   - yoga
   - grenoble
+  - stages
 url: "https://www.vie-en-yoga.com" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog
 lang: fr
