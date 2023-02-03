@@ -31,11 +31,18 @@ description: >- # this means to ignore newlines until "baseurl:"
   Ora Josef-Hay, 30 ans d'expérience du Hatha Yoga.
   Le centre propose aussi yoga pour séniors, PMR ou personne en situation de handicap.
 keywords:
-  - cours
   - yoga
   - grenoble
+  - débutants
+  - hatha yoga
+  - cours
   - stages
+  - maternité
+  - prénatal
   - handicap
+  - pmr
+  - sénior
+  - pas cher
 url: "https://www.vie-en-yoga.com" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog
 lang: fr
