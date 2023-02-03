@@ -147,6 +147,30 @@
   }
 }
 
+.circle-center-profile-picture {
+  display: block;
+  border-radius: 50%;
+  border: 2px solid $cvy-purple;
+  height:auto;
+  margin : 0 auto;
+}
+
+.rond-center-profile-picture {
+  border-radius: 10%;
+  display: block;
+  border: 2px solid $cvy-purple;
+  height:auto;
+  margin : 0 auto;
+}
+
+.rect-center-profile-picture {
+  display: block;
+  border: 2px solid $cvy-purple;
+  height:auto;
+  margin : 0 auto;
+}
+
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Din17 Regular';
   font-weight: bold;
