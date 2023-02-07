@@ -10,7 +10,18 @@ type: page
 <div class="container">
   <div class="row mb-2">
     <div class="col">
-      <h4>Accès, Contacts et Renseignements</h4>
+      <h4>Contacts, Accès et Renseignements</h4>
+
+      <h5>Adresse mail</h5>
+      <p>
+        <a href="mailto:{{ site.email }}">{{ site.email }}</a><br />
+      </p>
+
+      <h5>Téléphone</h5>
+      <p>
+        Portable : <a href="tel:{{ site.phone.mobile | remove: '.' }}">{{ site.phone.mobile }}</a><br />
+        Fixe : <a href="tel:{{ site.phone.landline | remove: '.' }}">{{ site.phone.landline }}</a><br />
+      </p>
 
       <h5>Adresse du Centre Vie en Yoga</h5>
       <p>
@@ -32,17 +43,6 @@ type: page
         <strong>Attention : l'entrée est côté parc (aire de jeux pour enfants)</strong> : <br />
         <img src="/assets/img/20210923_093536_entree.webp" border="0" alt="logo" height="200px" >
         <img src="/assets/img/plan.webp" border="0" alt="logo" height="200px">
-      </p>
-
-      <h5>Téléphone</h5>
-      <p>
-        Fixe : <a href="tel:{{ site.phone.landline | remove: '.' }}">{{ site.phone.landline }}</a><br />
-        Portable : <a href="tel:{{ site.phone.mobile | remove: '.' }}">{{ site.phone.mobile }}</a><br />
-      </p>
-
-      <h5>Adresse mail</h5>
-      <p>
-        <a href="mailto:{{ site.email }}">{{ site.email }}</a><br />
       </p>
         
       <h5>Administratif</h5>
