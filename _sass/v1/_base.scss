@@ -70,6 +70,17 @@
   color: rgba(255,255,255,.55);
 }
 
+.text-footer-left > a {
+  text-decoration: none;
+  color: rgba(255,255,255,.55);
+  &:link, &:visited {
+    color: rgba(255,255,255,.55);
+  }
+  &:hover, &:active {
+    color: rgba(255,255,255,.75);
+  }
+}
+
 .text-footer-right {
   font-family: 'Din17 Regular';
   font-weight: bold;
