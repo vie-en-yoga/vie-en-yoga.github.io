@@ -72,12 +72,12 @@
 
 .text-footer-left > a {
   text-decoration: none;
-  color: rgba(255,255,255,.55);
+  color: rgba(255,255,255,.75);
   &:link, &:visited {
-    color: rgba(255,255,255,.55);
+    color: rgba(255,255,255,.75);
   }
   &:hover, &:active {
-    color: rgba(255,255,255,.75);
+    color: rgba(255,255,255,1);
   }
 }
 
