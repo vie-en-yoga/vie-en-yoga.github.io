@@ -67,7 +67,7 @@
 .text-footer-left {
   font-family: 'Din17 Regular';
   font-weight: bold;
-  color: rgba(255,255,255,.55);
+  color: rgba(255,255,255,1);
 }
 
 .text-footer-left > a {
@@ -85,16 +85,16 @@
   font-family: 'Din17 Regular';
   font-weight: bold;
   text-align: right;
-  color: rgba(255,255,255,.55);
+  color: rgba(255,255,255,1);
 }
 
 .text-footer-right > a {
   text-decoration: none;
   &:link, &:visited {
-    color: rgba(255,255,255,.55);
+    color: rgba(255,255,255,.75);
   }
   &:hover, &:active {
-    color: rgba(255,255,255,.75);
+    color: rgba(255,255,255,1);
   }
 }
 
