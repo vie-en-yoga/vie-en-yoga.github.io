@@ -72,12 +72,12 @@
 
 .text-footer-left > a {
   text-decoration: none;
-  color: rgba(255,255,255,.75);
+  color: rgba(255,255,255,1);
   &:link, &:visited {
-    color: rgba(255,255,255,.75);
+    color: rgba(255,255,255,1);
   }
   &:hover, &:active {
-    color: rgba(255,255,255,1);
+    color: rgba(255,255,255,.75);
   }
 }
 
@@ -91,10 +91,10 @@
 .text-footer-right > a {
   text-decoration: none;
   &:link, &:visited {
-    color: rgba(255,255,255,.75);
+    color: rgba(255,255,255,1);
   }
   &:hover, &:active {
-    color: rgba(255,255,255,1);
+    color: rgba(255,255,255,.75);
   }
 }
 
