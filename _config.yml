@@ -29,22 +29,37 @@ phone:
 facebook: https://www.facebook.com/profile.php?id=100072264787534
 instagram: https://instagram.com/centre_vie_en_yoga?igshid=YmMyMTA2M2Y=/
 description: >- # this means to ignore newlines until "baseurl:"
-  Cours et stages de Yoga à Grenoble, pour tous de débutant à confirmé.
-  Ora Josef-Hay, 30 ans d'expérience du Hatha Yoga.
-  Le centre propose aussi yoga pour séniors, PMR ou personne en situation de handicap.
+  Découvrez nos cours et stages de Yoga à Grenoble, pour tous, de débutants à confirmés.
+  Testez aussi méditation, relaxation, yoga prénatal, yoga sénior ou adapté aux personnes à mobilité réduite, en situation de handicap.
 keywords:
   - yoga
   - grenoble
-  - débutants
+  - cours de yoga
+  - stages de yoga
+  - yoga débutant
+  - méditation
+  - relaxation
   - hatha yoga
-  - cours
-  - stages
-  - maternité
-  - prénatal
-  - handicap
-  - pmr
-  - sénior
-  - pas cher
+  - yoga enceinte
+  - yoga prénatal
+  - yoga sénior
+  - gestion du stress
+  - yoga et anxiété
+  - yoga et mal de dos
+  - yoga et insomnie
+  - yoga sur chaise
+  - yoga handicap
+  - personne à mobilité réduite
+  - yoga en ligne
+  - vidéo yoga
+  - yoga pour maigrir
+  - yoga pas cher
+  - yoga gratuit
+  - postures de yoga
+  - professeur de yoga
+  - yoga sport
+  - yoga cours particulier
+  - yoga bienveillance
 url: "https://www.vie-en-yoga.com" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog
 lang: fr
