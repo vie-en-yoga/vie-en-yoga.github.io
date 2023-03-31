@@ -32,34 +32,51 @@ description: >- # this means to ignore newlines until "baseurl:"
   Découvrez nos cours et stages de Yoga à Grenoble, pour tous, de débutants à confirmés.
   Testez aussi méditation, relaxation, yoga prénatal, yoga sénior ou adapté aux personnes à mobilité réduite, en situation de handicap.
 keywords:
-  - yoga
-  - grenoble
-  - cours de yoga
-  - stages de yoga
-  - yoga débutant
-  - méditation
-  - relaxation
-  - hatha yoga
-  - yoga enceinte
-  - yoga prénatal
-  - yoga sénior
-  - gestion du stress
-  - yoga et anxiété
-  - yoga et mal de dos
-  - yoga et insomnie
-  - yoga sur chaise
-  - yoga handicap
-  - personne à mobilité réduite
-  - yoga en ligne
-  - vidéo yoga
-  - yoga pour maigrir
-  - yoga pas cher
-  - yoga gratuit
-  - postures de yoga
-  - professeur de yoga
-  - yoga sport
-  - yoga cours particulier
-  - yoga bienveillance
+  - Cours Yoga Grenoble
+  - Stages Yoga Grenoble
+  - Yoga débutant Grenoble
+  - Yoga Grenoble
+  - Cours Yoga débutant Grenoble
+  - Ateliers Yoga Grenoble
+  - Cours collectifs Yoga Grenoble
+  - Yoga enceinte Grenoble
+  - Hatha Yoga Grenoble
+  - Vinyasa Yoga Grenoble
+  - Salle Yoga Grenoble
+  - Centre Yoga Grenoble
+  - Vini Yoga Grenoble
+  - Méditation Yoga Grenoble
+  - Relaxation Yoga Grenoble
+  - Professeur Yoga Grenoble
+  - Prof Yoga Grenoble
+  - Cours particuliers Yoga Grenoble
+  - Yoga en ligne Grenoble
+  - Yoga en visio Grenoble
+  - Vidéos Yoga
+  - Yoga sénior Grenoble
+  - Cours Yoga handicap Grenoble
+  - Cours Yoga dynamique Grenoble
+  - Evènements Yoga Grenoble
+  - Yoga dynamique Grenoble
+  - Yoga sur chaise Grenoble
+  - HandiYoga
+  - Retraites Yoga Isère
+  - Yoga personnes à mobilité réduites Grenoble
+  - Cours Hatha Yoga Grenoble
+  - Yoga pas cher Grenoble
+  - Yoga prénatal Grenoble
+  - Cours Yoga en duo Grenoble
+  - Yoga gratuit Grenoble
+  - Cours d’essai gratuit Yoga Grenoble
+  - Yoga de l’énergie Grenoble
+  - Vinyasa flow Grenoble
+  - Postures Yoga Grenoble
+  - Yoga gestion du stress Grenoble
+  - Yoga mal de dos 
+  - Yoga insomnies
+  - Yoga pour maigrir
+  - Yoga Caserne de Bonne
+  - Yoga Isère
 url: "https://www.vie-en-yoga.com" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog
 lang: fr
