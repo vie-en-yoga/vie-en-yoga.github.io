@@ -11,6 +11,8 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        
+          <!-- Sous-menu COURS   ------------------------------------------------------------------------------>        
           <li class="nav-item dropdown">
             {%- if page.url contains "/cours" -%}
             <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cours de Yoga</a>
@@ -47,6 +49,41 @@
             {%- endif -%}
             </li>
           {%- endfor -%}
+          
+          <!-- Sous-menu MEDIATHEQUE --------------------------------------------------------------------------->        
+          <li class="nav-item dropdown">
+            {%- if page.url contains "/mediatheque" -%}
+            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Médiathèque</a>
+            {%- else -%}
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Médiathèque</a>
+            {%- endif -%}
+            <ul class="dropdown-menu bg-dark">
+              <!-- Add all sub-menu entries -->
+              {%- assign subpages = site.pages | where: "type", "sub-mediatheque" | sort: "order" -%}
+              {%- for p in subpages -%}
+                <li>
+                {%- if p.title == page.title -%}
+                  <a class="dropdown-item active" aria-current="page" href="{{ p.url | relative_url }}">{{ p.title | escape }}</a>
+                {%- else -%}
+                  <a class="dropdown-item" href="{{ p.url | relative_url }}">{{ p.title | escape }}</a>
+                {%- endif -%}
+                </li>
+              {%- endfor -%}
+            </ul>
+          </li>
+
+          <!-- Menu Contact -->
+          {%- assign pages = site.pages | where: "type", "pages-a-droite-de-mediatheque" | sort: "order" -%}
+          {%- for p in pages -%}
+            <li class="nav-item">
+            {%- if p.title == page.title -%}
+              <a class="nav-link active" aria-current="page" href="{{ p.url | relative_url }}">{{ p.title | escape }}</a>
+            {%- else -%}
+              <a class="nav-link" href="{{ p.url | relative_url }}">{{ p.title | escape }}</a>
+            {%- endif -%}
+            </li>
+          {%- endfor -%}
+          
         </ul>
       </div>
     </div>
