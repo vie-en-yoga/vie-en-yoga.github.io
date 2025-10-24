@@ -35,6 +35,28 @@
               <li><a class="dropdown-item" href="/assets/pdf/fiche_inscription_cours_vie_en_yoga.pdf" target="_blank">Fiche d'inscription</a></li>
             </ul>
           </li>
+          
+          <!-- Sous-menu STAGES --------------------------------------------------------------------------->        
+          <li class="nav-item dropdown">
+            {%- if page.url contains "/stages" -%}
+            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Stages</a>
+            {%- else -%}
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Stages</a>
+            {%- endif -%}
+            <ul class="dropdown-menu bg-dark">
+              <!-- Add all sub-menu entries -->
+              {%- assign subpages = site.pages | where: "type", "sub-stages" | sort: "order" -%}
+              {%- for p in subpages -%}
+                <li>
+                {%- if p.title == page.title -%}
+                  <a class="dropdown-item active" aria-current="page" href="{{ p.url | relative_url }}">{{ p.title | escape }}</a>
+                {%- else -%}
+                  <a class="dropdown-item" href="{{ p.url | relative_url }}">{{ p.title | escape }}</a>
+                {%- endif -%}
+                </li>
+              {%- endfor -%}
+            </ul>
+          </li>
 
           <!-- Add all other menu entries -->
           {%- assign pages = site.pages | where: "type", "page" | sort: "order" -%}
