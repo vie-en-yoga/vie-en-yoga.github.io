@@ -24,6 +24,6 @@ jobs:
           bundle exec jekyll build && \
           bundle exec htmlproofer \
             --only-4xx \
-            --check-internal-hash=false \
-            --enforce-https=false \
+            --no-check-internal-hash \
+            --no-enforce-https \
             ./_site
